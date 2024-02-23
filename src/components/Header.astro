@@ -1,0 +1,43 @@
+
+---
+const twBgOpacity = .08;
+---
+
+<header class="header">
+	<div>
+		<a href="https://github.com/i-am-mmazzucco" target="_blank">Github</a>
+		<a href="https://www.youtube.com/@mmazzucco" target="_blank">Youtube</a>
+		<a href="https://www.instagram.com/mateomazzucco.jpg" target="_blank">Instagram</a>
+		<a href="https://strava.app.link/d22oZkeqpHb" target="_blank">Strava</a>
+		<a href="https://www.linkedin.com/in/mateo-mazzucco" target="_blank">Linkedin</a>
+		<a href="https://twitter.com/MazzuccoMateo" target="_blank">X</a>
+	</div>
+	<a href="mailto:mateomazzucco4@gmail.com" target="_blank" class="email">Email (biz only)</a>
+</header>
+
+<style define:vars={{ twBgOpacity }}>
+	.header {
+		display: flex;
+		justify-content: center;
+		align-items: flex-end;
+		padding: 1rem;
+		flex-direction: column;
+		gap: .5rem
+	}
+
+	div {
+		display: flex;
+		gap: .5rem
+	}
+
+	a {
+		color: inherit;
+		text-decoration: inherit;
+	}
+
+	.email {
+		padding: 0.25rem 0.75rem 0.25rem 0.75rem;
+		background-color: rgb(241 245 249/var(--twBgOpacity));
+		border-radius: 0.45rem;
+	}
+</style>
